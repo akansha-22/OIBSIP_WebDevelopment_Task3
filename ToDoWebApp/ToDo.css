@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  --brown:#5e0404;
+  --pink:#faddd4ca;
+  --light-pink:#f8b0b0;
+  --dark-red:#9d0a08;
+  --red: #ff0000;
+  --green:#32a04c;
+  --yellow:#ffc107;
+  --blue:#007bff;
+  --white:#fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('images/Bg.jpeg') no-repeat center center/cover;
+}
+
+.header {
+  background-color: var(--pink);
+  padding: 10px;
+  text-align: center;
+  color:var(--brown);
+  font-size: 24px;
+  font-weight: bold;
+  margin: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  background:var(--pink);
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 350px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form button {
+  background-color: var(--green);
+  color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.553);
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-container {
+  background: var(--pink);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 900px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  overflow-x: auto;
+}
+
+h2 {
+    color: var(--brown);
+    text-align: center;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th {
+  text-align: center;
+  font-weight: bolder;
+  color: var(--white);
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--brown);
+}
+
+td {
+  background:var(--light-pink);
+  color: #333;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.click-btn{
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.click-btn:active{
+  transform: translatey(4px);
+}
+
+.action-btn {
+  padding: 5px 10px;
+  margin-right: 5px;
+  box-shadow: 0 3px 8px 0 #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: var(--green);
+  color: black;
+}
+
+.complete-btn {
+  background: var(--blue);
+  color: white;
+}
+
+.delete-btn {
+  background: var(--red);
+  color: white;
+  font-weight: bold;
+}

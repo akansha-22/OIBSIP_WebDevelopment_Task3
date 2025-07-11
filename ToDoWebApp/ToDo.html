@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List Web App</title>
+  <link rel="stylesheet" href="ToDo.css" />
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+</head>
+<body>
+  <div class="header">
+    <h1>To-Do List Web App</h1>
+  </div>
+
+  <div class="container">
+    <div class="form-container">
+      <form id="taskForm">
+        <h2>Add Tasks</h2>
+        <input type="text" id="title" placeholder="Title" required />
+        <textarea id="description" placeholder="Description" required></textarea>
+        <button class="click-btn" type="submit">Save</button>
+      </form>
+    </div>
+
+    <div class="list-container">
+      <h2>Pending Tasks</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="pendingTasks"></tbody>
+      </table>
+
+      <h2>Completed Tasks</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Completed At</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="completedTasks"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="ToDo.js"></script>
+</body>
+</html>
